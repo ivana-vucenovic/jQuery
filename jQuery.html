@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery-1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main-page{
+            width: 970px;
+            background-color: rgb(168, 108, 108);
+        }
+        header{
+            height: 70px;
+            background-color: rgb(170, 29, 29);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            /* text-align: center; */
+        }
+        #top-row{
+            display: flex;
+        }
+        #bottom-row{
+            display: flex;
+        }
+        #bettles, #book, #cartoon, #eight-mile, #octopus, #planets, #spider, #wonders{
+            width: 25%;
+        }
+        footer{
+            background-color: rgb(168, 108, 108);
+        }
+        #btn{
+            height: 50px;
+            width: 150px;
+            background-color: rgb(170, 29, 29);
+            font-weight: bold;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-page">
+        <header>
+            <h1>8  Eight  8</h1>
+        </header>
+        <main>
+            <div id="top-row">
+                <img id="bettles" src="eight/Bittles.jpeg" alt="bettles">
+                <img id="book" src="eight/book.jpeg" alt="book">
+                <img id="cartoon" src="eight/cartoon.jpeg" alt="cartoon">
+                <img id="eight-mile" src="eight/eight-mile.jpeg" alt="eight-mile">
+            </div>
+            <div id="bottom-row">
+                <img id="octopus" src="eight/octopus.jpeg" alt="octopus">
+                <img id="planets" src="eight/planets.jpeg" alt="planets">
+                <img id="spider" src="eight/spider.jpeg" alt="spider">
+                <img id="wonders" src="eight/wonders.jpeg" alt="wonders">
+            </div>
+        </main>
+        <footer>
+            <button id="btn">Restore</button>
+        </footer>
+        <script>
+            $('#bettles').click(function(){
+                $("#bettles").hide()
+            })
+            $('#book').click(function(){
+                $("#book").hide()
+            })
+            $('#cartoon').click(function(){
+                $("#cartoon").hide()
+            })
+            $('#eight-mile').click(function(){
+                $("#eight-mile").hide()
+            })
+            $('#octopus').click(function(){
+                $("#octopus").hide()
+            })
+            $('#planets').click(function(){
+                $("#planets").hide()
+            })
+            $('#spider').click(function(){
+                $("#spider").hide()
+            })
+            $('#wonders').click(function(){
+                $("#wonders").hide()
+            })
+            $('#btn').click(function(){
+                $("#bettles").show()
+            })
+            $('#btn').click(function(){
+                $("#book").show()
+            })
+            $('#btn').click(function(){
+                $("#cartoon").show()
+            })
+            $('#btn').click(function(){
+                $("#eight-mile").show()
+            })
+            $('#btn').click(function(){
+                $("#octopus").show()
+            })
+            $('#btn').click(function(){
+                $("#planets").show()
+            })
+            $('#btn').click(function(){
+                $("#spider").show()
+            })
+            $('#btn').click(function(){
+                $("#wonders").show()
+            })
+        </script>
+    </div>
+</body>
+</html>
